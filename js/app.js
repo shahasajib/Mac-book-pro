@@ -4,7 +4,7 @@ function priceOfProduct(priceId, price) {
     productCost.innerText = parseInt(price);
     calculateTotal();
 }
-// calculation Total
+// Calculation Of Total Price
 function calculateTotal() {
     const memoryCost = parseInt(document.getElementById("Extra-Memory-Cost").innerText);
     const ssdCost = parseInt(document.getElementById("Extra-Storage-Cost").innerText);
@@ -17,7 +17,7 @@ function calculateTotal() {
 
 }
 
-// memory
+// Memory-part
 document.getElementById("memory-solt-8gb").addEventListener("click", function () {
     priceOfProduct("Extra-Memory", 0);
 
@@ -26,7 +26,7 @@ document.getElementById("memory-solt-16gb").addEventListener("click", function (
     priceOfProduct("Extra-Memory", 180);
 })
 
-// ssd
+// Storage-part
 document.getElementById("ssd-solt-256gb").addEventListener("click", function () {
     priceOfProduct("Extra-Storage", 0);
 })
@@ -37,7 +37,7 @@ document.getElementById("ssd-solt3-1tb").addEventListener("click", function () {
     priceOfProduct("Extra-Storage", 180);
 })
 
-// delivery charge
+// Delivery-Charge-Part 
 document.getElementById("delivery-free").addEventListener("click", function () {
     priceOfProduct("Delivery", 0)
 })
@@ -45,7 +45,7 @@ document.getElementById("delivery-charge20").addEventListener("click", function 
     priceOfProduct("Delivery", 20)
 })
 
-// promoCode
+// promoCode-Part
 document.getElementById("promoBtn").addEventListener("click", function () {
     const promoFlied = document.getElementById("promoCode")
     const totalPrice = document.getElementById("Total-Price");
